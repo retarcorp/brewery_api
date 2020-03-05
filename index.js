@@ -24,11 +24,11 @@ app.get('/*', function(req, res) {
             if (element.brewery_type != 'micro') {
               brewery = new Brewery(element);
               html += `<tr>`
-              html += `<td>${brewery.id}`;
-              html += `<td>${brewery.name}`;
-              html += `<td>${brewery.getFullAddress()}</td>`;
-              html += `<td>${brewery.phone}`;
-              html += `<td>${brewery.website_url}`;
+              html += `<td align="center">${brewery.id}`;
+              html += `<td align="center">${brewery.name}`;
+              html += `<td align="center">${brewery.getFullAddress()}`;
+              html += `<td align="center">${brewery.phone}`;
+              html += `<td align="center">${brewery.website_url}`;
               html += `</tr>`
             }
           });
